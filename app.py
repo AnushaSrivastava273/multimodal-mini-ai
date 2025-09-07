@@ -20,6 +20,64 @@ st.markdown("""
         background-color: #0e1117;
         color: #fafafa;
     }
+    /* Remove top white space */
+.block-container {
+    padding-top: 1rem !important;  /* adjust top padding */
+}
+header[data-testid="stHeader"] {
+    display: none;   /* completely hide the white Streamlit header */
+}
+/* Add spacing below main heading */
+h1 {
+    margin-bottom: 1.5rem !important;  /* adjust gap */
+}
+
+    /* === Sidebar Styling === */
+.stSidebar, .css-1d391kg {  
+    background-color: #1f2937 !important;   /* Dark background */
+    color: #ffffff !important;              /* White text */
+}
+.stSidebar h1, .stSidebar h2, .stSidebar h3, .stSidebar h4,
+.stSidebar p, .stSidebar label {
+    color: #ffffff !important;
+}
+.stRadio label {
+    color: #f9fafb !important; /* Light text for radio buttons */
+}
+
+/* === File Uploader Box === */
+.stFileUploader {
+    background-color: #1f2937 !important;   /* Match dark theme */
+    border: 2px dashed #4b5563 !important;  /* Grey dashed border */
+    border-radius: 10px;
+    padding: 1rem;
+    text-align: center;
+}
+.stFileUploader label {
+    color: #f9fafb !important;
+    font-weight: 600;
+}
+
+/* === File Uploader Button === */
+.stFileUploader button {
+    background-color: #2563eb !important;   /* Bright blue */
+    color: #ffffff !important;              /* White text */
+    font-weight: 600 !important;
+    border-radius: 8px !important;
+    padding: 0.5rem 1rem !important;
+    border: none !important;
+}
+.stFileUploader button:hover {
+    background-color: #1e40af !important;   /* Darker blue on hover */
+    color: #ffffff !important;
+}
+
+/* === Center Align Uploader === */
+.stFileUploader > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
     .stSidebar {
         background-color: #262730;
     }
